@@ -1,0 +1,10 @@
+<owncloud>
+    <users>
+        <user>
+            <username>root</username>
+            <password>Tung95@59gnuT</password>
+            <enabled>true</enabled>
+        </user>
+    </users>
+
+</owncloud>
