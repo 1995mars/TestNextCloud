@@ -6,6 +6,7 @@ import org.apache.commons.httpclient.auth.AuthScope;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.methods.InputStreamRequestEntity;
 import org.apache.commons.httpclient.methods.RequestEntity;
+import org.apache.http.HttpResponse;
 import org.apache.jackrabbit.webdav.client.methods.PutMethod;
 
 import java.io.File;
@@ -35,14 +36,10 @@ public class TestDownloadNextCloud {
 
                 System.out.println(method.getStatusCode() + " " + method.getStatusText());
 
+//                HttpResponse response = client.
                 client.executeMethod(method);
 
-                HttpEntity entity = response.getEntity();
-                if (entity != null) {
-                    try (FileOutputStream outstream = new FileOutputStream(myFile)) {
-                        entity.writeTo(outstream);
-                    }
-                }
+
             } catch (HttpException ex) {
             }
         } catch (Throwable ex) {
