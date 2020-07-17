@@ -1,9 +1,16 @@
 package com.vnnet.test.console;
 
 import org.aarboard.nextcloud.api.*;
-import org.apache.commons.io.IOUtils;
+import org.apache.commons.httpclient.Credentials;
+import org.apache.commons.httpclient.HttpClient;
+import org.apache.commons.httpclient.HttpException;
+import org.apache.commons.httpclient.UsernamePasswordCredentials;
+import org.apache.commons.httpclient.auth.AuthScope;
+import org.apache.commons.httpclient.methods.GetMethod;
 
 import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Test {
     public static void main(String[] args) {
@@ -25,4 +32,5 @@ public class Test {
         }
 
     }
+
 }

@@ -1,3 +1,5 @@
+package com.vnnet.test.console;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.logging.Level;
