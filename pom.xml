@@ -7,6 +7,18 @@
     <groupId>org.example</groupId>
     <artifactId>TestLog</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
 
@@ -26,37 +38,37 @@
             <artifactId>spring-cloud-commons</artifactId>
             <version>2.2.0.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>org.aarboard.nextcloud</groupId>
-            <artifactId>nextcloud-api</artifactId>
-            <version>11.2.0</version>
-        </dependency>
+                <dependency>
+                    <groupId>org.aarboard.nextcloud</groupId>
+                    <artifactId>nextcloud-api</artifactId>
+                    <version>11.2.0</version>
+                </dependency>
 
-        <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
-        <dependency>
-            <groupId>commons-httpclient</groupId>
-            <artifactId>commons-httpclient</artifactId>
-            <version>3.1</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.jackrabbit/jackrabbit-jcr-commons -->
-        <dependency>
-            <groupId>org.apache.jackrabbit</groupId>
-            <artifactId>jackrabbit-jcr-commons</artifactId>
-            <version>2.21.2</version>
-        </dependency>
+                <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
+                <dependency>
+                    <groupId>commons-httpclient</groupId>
+                    <artifactId>commons-httpclient</artifactId>
+                    <version>3.1</version>
+                </dependency>
+                <!-- https://mvnrepository.com/artifact/org.apache.jackrabbit/jackrabbit-jcr-commons -->
+                <dependency>
+                    <groupId>org.apache.jackrabbit</groupId>
+                    <artifactId>jackrabbit-jcr-commons</artifactId>
+                    <version>2.21.2</version>
+                </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.jackrabbit/jackrabbit-webdav -->
-        <dependency>
-            <groupId>org.apache.jackrabbit</groupId>
-            <artifactId>jackrabbit-webdav</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.11</version>
-        </dependency>
+                <!-- https://mvnrepository.com/artifact/org.apache.jackrabbit/jackrabbit-webdav -->
+                <dependency>
+                    <groupId>org.apache.jackrabbit</groupId>
+                    <artifactId>jackrabbit-webdav</artifactId>
+                    <version>2.1.0</version>
+                </dependency>
+                <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+                <dependency>
+                    <groupId>commons-codec</groupId>
+                    <artifactId>commons-codec</artifactId>
+                    <version>1.11</version>
+                </dependency>
 
 
 
