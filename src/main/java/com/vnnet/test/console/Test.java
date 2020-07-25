@@ -63,8 +63,8 @@ public class Test {
 //            ServerConfig serverConfig = new ServerConfig("tung95.duckdns.org",true, 443,"nc_admin", "nextcloudpassword");
 //            FilesharingConnector instance = new FilesharingConnector(serverConfig);
 //            boolean result = nextcloudConnector.editShare(8, ShareData.EXPIREDATE, formatter.format(c1.getTime()));
-
-           boolean kq = nextcloudConnector.editShare(8, ShareData.EXPIREDATE,"2020-07-24");
+//
+//           boolean kq = nextcloudConnector.editShare(8, ShareData.EXPIREDATE,"2020-07-24");
 
             // // kiem tra thong tin file chia se
 //            Share share = nextcloudConnector.getShareInfo(8);
@@ -72,6 +72,9 @@ public class Test {
 //            // // Huy chia se link file
 //            boolean kq = nextcloudConnector.deleteShare(7);
 //            System.out.println(result);
+            // // disableUser User
+//            nextcloudConnector.disableUser("TESTUSER");
+//            nextcloudConnector.enableUser("TESTUSER");
         } catch (Exception e) {
             e.printStackTrace();
         }
