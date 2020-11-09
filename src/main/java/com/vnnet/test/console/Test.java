@@ -29,11 +29,12 @@ public class Test {
             // // download file vve may
 //            nextcloudConnector.downloadFile("/Photos/Coast1.jpg","/home/t94hp/Desktop/");
             /// // Kiem tra thu muc da duoc tao hay chua
-//            boolean kq_check =  nextcloudConnector.folderExists("Musics");
-//            if (kq_check == false) {
-//                nextcloudConnector.createFolder("Musics");
-//            }
-//            System.out.println(kq_check);
+            boolean kq_check =  nextcloudConnector.fileExists("PrivateKey/next1/rsa_private.pem");
+
+            if (kq_check == false) {
+                nextcloudConnector.createFolder("PrivateKey/tung-iot");
+            }
+            System.out.println(kq_check);
             // // upload file len he thong
 //            InputStream initialStream = new FileInputStream(new File("/home/t94hp/Desktop/cogiao.jpg"));
 //            nextcloudConnector.uploadFile(initialStream,"/Musics/cogiao1.jpg");
